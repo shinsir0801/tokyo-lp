@@ -6,7 +6,6 @@ import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
-import { faBrush } from '@fortawesome/free-solid-svg-icons';
 import { faLaptop } from '@fortawesome/free-solid-svg-icons';
 import { faMobileScreenButton } from '@fortawesome/free-solid-svg-icons';
 import { faFile } from '@fortawesome/free-solid-svg-icons';
