@@ -1,5 +1,5 @@
 /* body の背景色も白に設定（不要な黒い背景を防ぐ） */
-body {
+:global(body) {
   background-color: #FFFFFF;
 }
 
