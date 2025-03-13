@@ -1,0 +1,335 @@
+/* body の背景色も白に設定（不要な黒い背景を防ぐ） */
+body {
+  background-color: #FFFFFF;
+}
+
+/* 全体コンテナ：画面いっぱいに広げ、左右にパディング */
+.uContainer {
+  font-family: 'Noto Sans JP', sans-serif;
+  width: 100%;
+  padding: 60px 20px; /* 上下60px、左右20px */
+  background-color: #FFFFFF;
+  color: #1F2937;
+  box-sizing: border-box;
+}
+
+/* 各セクションの中身をラップするコンテナ（プロフィール・塗り絵・その他） */
+.maincontainer {
+  padding: 0 20px 40px; /* 左右20px、下部40px */
+}
+
+/* 以下、既存のスタイルはそのまま */
+
+.uTitle {
+  font-size: 36px;
+  font-weight: bold;
+  color: #1B4332;
+  margin-bottom: 100px;
+}
+
+.uSubtitle {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2D6A4F;
+  background-color: #F5F9F5;
+  padding: 10px 20px;
+  border-left: 4px solid #1B4332;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.uSubtitle .icon {
+  margin-right: 5px;
+  font-size: 18px;
+}
+
+.uSubtitle .faUser {
+  font-size: 18px !important;
+}
+
+.subtitle {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.uSubtitleIcon {
+  margin-right: 10px;
+  font-size: 1.5em;
+}
+
+.uProfileContent {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.uProfileText {
+  padding-left: 20px;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  gap: 40px;
+}
+
+.uLeft {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.uLeft p {
+  font-size: 16px;
+  line-height: 1.4;
+  color: #1F2937;
+  margin-bottom: 20px;
+}
+
+.uLeft p strong {
+  background-color: #40916C;
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  margin-right: 8px;
+  display: inline-block;
+}
+
+.uProfileImage {
+  max-width: 500px;
+  height: auto;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+.uProfileImagePic {
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.uDownload {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.uWallpaperLink {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.uDownloadButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  background-color: white;
+  color: #40916C;
+  border: 2px solid #40916C;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.uDownloadButton:hover {
+  background-color: #40916C;
+  color: white;
+  border-color: #40916C;
+}
+
+.uWallpapers {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.uWallpapers a {
+  display: inline-block;
+  text-align: center;
+  margin: 15px;
+}
+
+.uWallpaper {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.pointText {
+  font-size: 14px;
+  line-height: 1;
+  color: #1F2937;
+  margin-bottom: 15px;
+}
+
+a.aText {
+  color: #40916C;
+}
+
+ul.fileList {
+  margin-bottom: 15px;
+}
+
+.customText {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #1F2937;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+/* ぬり絵ブロック（画像＋テキスト）のレイアウト */
+.uColoringPageSection {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+/* ぬり絵ブロック内の左右比率 */
+.uColoringLeft,
+.uColoringRight {
+  flex: 1;
+}
+
+/* ダウンロード案内文 */
+.downloadText {
+  font-size: 16px;
+  color: #1F2937;
+  margin-bottom: 20px;
+  white-space: nowrap;
+}
+
+/* 3列×2行のグリッドレイアウト */
+.downloadGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+.breakLine {
+  display: inline;
+}
+
+/* 壁紙ダウンロードセクション */
+.uWallpaperDownloadSection {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 40px;
+  /* 既に .uContainer / .maincontainer で左右パディングを設定しているのでここは削除 */
+}
+
+.uWallpaperLeft {
+  flex: 2;
+  max-width: 50%;
+}
+
+.uWallpaperRight {
+  flex: 1;
+}
+
+/* 2列グリッドレイアウト */
+.downloadGridTwo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* タイトルとその下のブロックの幅統一用コンテナ */
+.sectionContainer {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* --------------------- */
+/* レスポンシブ対応 */
+/* --------------------- */
+@media (max-width: 768px) {
+  .uContainer {
+    padding: 20px;
+  }
+  
+  .uTitle {
+    font-size: 28px;
+    margin-bottom: 60px;
+  }
+  
+  .uSubtitle {
+    font-size: 20px;
+    padding: 8px 16px;
+    margin-bottom: 15px;
+  }
+  
+  /* maincontainer で左右のパディングを確保 */
+  .maincontainer {
+    padding: 0 10px 20px;
+  }
+  
+  /* プロフィールやぬりえのコンテンツは縦並びに変更 */
+  .uProfileContent {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+  
+  /* ぬりえブロック内の左右要素も幅100%に */
+  .uProfileImage,
+  .uColoringRight {
+    width: 100%;
+  }
+  
+  /* テキスト部分は maincontainer の横幅に合わせる */
+  .uProfileText {
+    width: 100%;
+    padding-left: 0;
+  }
+  
+  .uLeft {
+    width: 100%;
+  }
+  
+  .downloadGrid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 8px;
+  }
+  
+  .downloadGridTwo {
+    grid-template-columns: 1fr;
+    grid-gap: 8px;
+  }
+  
+  .uDownloadButton {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+  .downloadText {
+    white-space: normal;
+  }
+  .breakLine {
+    display: block;
+  }
+}

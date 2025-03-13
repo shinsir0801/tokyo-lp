@@ -1,0 +1,187 @@
+.uContainer {
+  font-family: 'Noto Sans JP', sans-serif; /* フォントをNoto Sans JPに指定 */
+  padding: 60px; /* 横幅と縦幅の余白を40pxに設定 */
+  background-color: #FFFFFF; /* 背景色を白に設定 */
+  color: #1F2937; /* 通常文字の色を統一 */
+  box-sizing: border-box; /* paddingが横幅に含まれるように */
+}
+
+.maincontainer{
+  padding: 30px; /* 横幅と縦幅の余白を40pxに設定 */
+}
+
+
+.uTitle {
+  font-size: 36px;
+  font-weight: bold;
+  color: #1B4332; /* 大・中タイトルの文字色 */
+}
+
+.uTitle1 {
+  font-size: 20px;
+  color: #2D6A4F; /* 大・中タイトルの文字色 */
+  margin-bottom: 120px; /* タイトルの下に余白を追加 */
+}
+
+.uSubtitle {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2D6A4F;
+  background-color: #F5F9F5;
+  padding: 10px 20px;
+  border-left: 4px solid #1B4332;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%; /* 幅を100%に設定 */
+}
+
+.uSubtitle .icon {
+  margin-right: 5px; /* アイコンと文字の間隔を少し広げる */
+  font-size: 18px; /* アイコンのサイズを小さく */
+}
+
+.uSubtitle .faUser {
+  font-size: 18px !important; /* 優先度を上げて強制的に適用 */
+}
+
+
+.subtitle {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.uSubtitleIcon {
+  margin-right: 10px;
+  font-size: 1.5em; /* アイコンのサイズを調整 */
+}
+
+.uProfileContent {
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+  margin-bottom: 40px;
+  width: 100%; /* プロフィールコンテンツを親の幅に合わせる */
+}
+
+.uProfileText {
+  padding-left: 20px; /* テキストと画像の間に余白を追加 */
+  width: 50%; /* 画像とテキストの幅を均等に */
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  gap: 40px;
+}
+
+.uLeft, .uRight {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+}
+
+.uLeft {
+  min-height: 100%; /* 高さを確保 */
+}
+
+.uLeft p, .uRight p {
+  font-size: 16px;
+  line-height: 1.4; /* 行間を広げる */
+  color: #1F2937; /* 通常文字の色 */
+  margin-bottom: 10px; /* 段落ごとに余白を追加 */
+}
+
+.uLeft p strong, .uRight p strong {
+  font-weight: bold;
+  color: #1B4332;
+}
+
+.uProfileImage {
+  max-width: 500px; /* 最大幅を指定して、画像が大きすぎないように調整 */
+  height: auto; /* 高さを自動調整 */
+  flex-grow: 1; /* 左のテキストに追従 */
+  display: flex;
+  align-items: center;
+}
+
+.uProfileImagePic {
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 画像を適切にトリミング */
+}
+
+.uDownload {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.uWallpaperLink {
+  display: inline-block;
+}
+
+.uDownloadButton {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: white;
+  color: #40916C;
+  border: 2px solid #40916C;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.uDownloadButton:hover {
+  background-color: #40916C;
+  color: white;
+  border-color: #40916C;
+}
+
+.uWallpapers {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* 壁紙リストの間隔を広げる */
+  margin-bottom: 40px; /* セクションの間隔を広げる */
+}
+
+.uWallpapers a {
+  display: inline-block;
+  text-align: center;
+  margin: 15px; /* リンクの余白を増やす */
+}
+
+.uWallpaper {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+.customText {
+  font-size: 14px;
+  line-height: 1.4; /* 行間を広げる */
+  color: #1F2937; /* 通常文字の色 */
+  margin-bottom: 15px; /* 余白を追加 */
+}
+
+.pointText {
+  font-size: 14px;
+  line-height: 1; /* 行間を広げる */
+  color: #1F2937; /* 通常文字の色 */
+  margin-bottom: 15px; /* 余白を追加 */
+}
+
+a.aText{
+  color: #40916C;
+}
+
+ul.fileList{
+  margin-bottom: 15px; /* 余白を追加 */
+}
+
